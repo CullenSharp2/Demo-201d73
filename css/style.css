@@ -1,6 +1,6 @@
 #page {
     margin: 2%;
-    padding: .3%;
+    padding: 1%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: solid black 2pt;
     display: inline-block;
@@ -38,22 +38,27 @@ figcaption {
 }
 
 section {
-    margin-bottom: 4%;
+    border-top: solid black 2pt;
+    margin-bottom: 10%;
     margin-top: 2%;
+    padding-top: 2%;
 }
 
 h3 {
     font-size: 18pt;
-    margin-bottom: .2%;
+    margin-bottom: .8%;
 }
 
 #bio {
     font-size: 12pt;
+    float: left;
+    overflow-wrap: break-word;
 }
 
 footer {
-    margin-top: 1%;
+    margin-top: 2%;
     border-top: solid black 2pt;
+    padding-top: 2%;
 }
 
 footer li {
