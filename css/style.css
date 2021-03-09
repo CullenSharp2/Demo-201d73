@@ -1,0 +1,62 @@
+#page {
+    margin: 2%;
+    padding: .3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid black 2pt;
+    display: inline-block;
+    background-color: salmon;
+}
+
+header {
+    font-size: 3em;
+    margin-bottom: 1%;
+}
+main {
+    display: inline;
+}
+
+#about {
+    display: inline;
+}
+
+figure {
+    display: inline;
+}
+
+#pfp {
+    width: 400px;
+    height: 400px;
+    display: inline;
+    border-radius: 5%;
+}
+
+figcaption {
+    font-size: 9pt;
+    padding-top: .1%;
+    margin-top: .2%;
+    margin-bottom: 1%;
+}
+
+section {
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+h3 {
+    font-size: 18pt;
+    margin-bottom: .2%;
+}
+
+#bio {
+    font-size: 12pt;
+}
+
+footer {
+    margin-top: 1%;
+    border-top: solid black 2pt;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+}
