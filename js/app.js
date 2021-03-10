@@ -1,19 +1,24 @@
 'use strict'
-
-let guess = parseInt(prompt('What number am I thinking of?'));
 let guesses = 4;
+while(guesses > 0) {
+    let guess = parseInt(prompt('What number am I thinking of?'));
 
-while(guess !== 3 && guesses !== 0) {
-    guess = parseInt(prompt('Try again.'));
-    guesses--;
-    console.log(guesses);
+    if(guess !== 3 && guesses === 1) {
+        alert('Sorry, you\'re out of guesses. The number was 3.');
+        guesses--;
+    } else if (guess === 3) {
+        alert('Congratulations you guess right. The number was 3.');
+        break;
+    } else if (guess > 3) {
+        alert('Your guess was too high.');
+        guesses--;
+    } else if (guess < 3) {
+        alert('Your guess was too low.');
+        guesses--;
+    }
 }
 
-if(guess !== 3) {
-    alert('Sorry, you\'re out of guesses.');
-} else {
-    alert('Congratulations, you got my number. It was 3.')
-}
+
 
 
 // function isYesorNo(response) {
