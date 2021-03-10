@@ -1,16 +1,26 @@
 'use strict'
 
 let numberGuess = parseInt(prompt('What number am I thinking of?'));
+let guesses = 4;
+
+while(guesses > 0 || numberGuess !== 3) {
+    if(numberGuess !== 3) {
+        let numberGuess = parseInt(prompt('What number am I thinking of?'));
+        guesses--;
+        console.log(guesses);
+    } else {
+        alert('you got it! my number was 3');
+        console.log(guesses);
+    }
+}
 
 // function isYesorNo(response) {
 //     response = response.toLowerCase();
 
 //     if(response === 'yes' || response === 'no') {
-//         // console.log('success, '+ response);
 //         return(response);
 //     } 
 //     else {
-//         // console.log('fail, '+ response); 
 //     } 
 // }
 
