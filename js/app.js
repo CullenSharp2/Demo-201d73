@@ -1,13 +1,20 @@
 'use strict'
 
-let numberGuess = parseInt(prompt('What number am I thinking of?'));
+let guess = parseInt(prompt('What number am I thinking of?'));
 let guesses = 4;
 
-while(numberGuess !== 3) {
-    let numberGuess = parseInt(prompt('Try again.'));
+while(guess !== 3 && guesses !== 0) {
+    guess = parseInt(prompt('Try again.'));
     guesses--;
     console.log(guesses);
 }
+
+if(guess !== 3) {
+    alert('Sorry, you\'re out of guesses.');
+} else {
+    alert('Congratulations, you got my number. It was 3.')
+}
+
 
 // function isYesorNo(response) {
 //     response = response.toLowerCase();
