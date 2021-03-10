@@ -8,11 +8,11 @@ function isYesorNo(response) {
     response = response.toLowerCase();
 
     if(response === 'yes' || response === 'no') {
-        console.log('success, '+ response);
+        // console.log('success, '+ response);
         return(response);
     } 
     else {
-        console.log('fail, '+ response); 
+        // console.log('fail, '+ response); 
     } 
 }
 
