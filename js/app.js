@@ -3,15 +3,10 @@
 let numberGuess = parseInt(prompt('What number am I thinking of?'));
 let guesses = 4;
 
-while(guesses > 0) {
-    if(numberGuess !== 3) {
-        let numberGuess = parseInt(prompt('Try again.'));
-        guesses--;
-        console.log(guesses);
-    } else {
-        alert('you got it! my number was 3');
-        console.log(guesses);
-    }
+while(numberGuess !== 3) {
+    let numberGuess = parseInt(prompt('Try again.'));
+    guesses--;
+    console.log(guesses);
 }
 
 // function isYesorNo(response) {
