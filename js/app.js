@@ -1,7 +1,7 @@
 'use strict'
 
-// let username = prompt('What\'s your name?');
-// alert('Welcome to my site, '+ username);
+let username = prompt('What\'s your name?');
+alert('Welcome to my site, '+ username);
 
 
 function isYesorNo(response) {
