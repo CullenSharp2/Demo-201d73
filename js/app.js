@@ -3,9 +3,9 @@
 let numberGuess = parseInt(prompt('What number am I thinking of?'));
 let guesses = 4;
 
-while(guesses > 0 || numberGuess !== 3) {
+while(guesses > 0) {
     if(numberGuess !== 3) {
-        let numberGuess = parseInt(prompt('What number am I thinking of?'));
+        let numberGuess = parseInt(prompt('Try again.'));
         guesses--;
         console.log(guesses);
     } else {
