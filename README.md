@@ -17,4 +17,4 @@ This is a webpage I made for Lab 2 of code 201. It prompts you for some input, a
 
 - I think appjs could look a little less goofy. There's refactoring to be done there.
 
-- Couldn't figure out how to get my paragraph to wrap aroundm, and get the box to fit snug around that.
+- Couldn't figure out how to get my paragraph to wrap around, and get the box to fit snug around that.
