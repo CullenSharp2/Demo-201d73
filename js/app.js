@@ -6,6 +6,9 @@ let answers = [6,10,20];
 let isCorrect = false;
 let score = 0;
 
+let username = prompt('What\'s your name?');
+alert('Welcome to my site, '+ username);
+
 while(guesses2 > 0 && isCorrect === false) {
     let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
 
@@ -27,7 +30,7 @@ while(guesses2 > 0 && isCorrect === false) {
 console.log(score);
 
 while(guesses > 0) {
-    let guess = parseInt(prompt('What number am I thinking of?'));
+    let guess = parseInt(prompt('What number between 0 and 10 am I thinking of?'));
 
     if(guess !== 3 && guesses === 1) {
         alert('Sorry, you\'re out of guesses. The number was 3.');
@@ -68,12 +71,10 @@ function checkAnswer(response, right, wrong) {
     }
 }
 
-let username = prompt('What\'s your name?');
-alert('Welcome to my site, '+ username);
 checkAnswer(prompt('Am I young?'), 'Yes, I\'m young', 'I\'m not old.');
 checkAnswer(prompt('Am I short?'), 'Correct, I\'m only 5\'8"', 'I\'m not tall.');
 checkAnswer(prompt('Do I own a dog?'), 'Yes, I do own a dog.', 'Wrong, I do own a dog');
 checkAnswer(prompt('Is my dog\'s name Doug?'), 'Yes, his name is Doug', 'Think again.');
 checkAnswer(prompt('Do I live in a house?'), 'Yes, I live in a house', 'Wrong, I do live in a house');
 
-alert('See you around, '+ username +'. you scored ' + score + 'out of 7');
+alert('See you around, '+ username +'. You scored ' + score + ' out of 7');
