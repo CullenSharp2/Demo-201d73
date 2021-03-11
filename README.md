@@ -6,7 +6,7 @@
 
 This is a webpage I made for Lab 2 of code 201. It prompts you for some input, and says your name. It says my name too, and a little about me. All of this was made simply with JavaScript, HTML, and CSS.
 
-I added a 'top ten' songs section to the end of my page.
+I added a 'top ten' songs section to the end of my page, and a number of guessing games (seven of them). The page tracks your score displaying it at the end. 
 
 ### Author: Cullen Sharp
 
