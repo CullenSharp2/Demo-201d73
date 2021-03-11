@@ -1,25 +1,43 @@
 'use strict'
-let guesses = 4;
-while(guesses > 0) {
-    let guess = parseInt(prompt('What number am I thinking of?'));
+// let guesses = 4;
+let guesses2 = 6;
+let answers = [6,10,20];
+let isCorrect = false;
 
-    if(guess !== 3 && guesses === 1) {
-        alert('Sorry, you\'re out of guesses. The number was 3.');
-        guesses--;
-    } else if (guess === 3) {
-        alert('Congratulations you guess right. The number was 3.');
-        break;
-    } else if (guess > 3) {
-        alert('Your guess was too high.');
-        guesses--;
-    } else if (guess < 3) {
-        alert('Your guess was too low.');
-        guesses--;
+while(guesses2 > 0 && isCorrect === false) {
+    let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
+
+    for(let i = 0; i < answers.length; i ++) {
+        if(guess === answers[i]) {
+            alert('You got it. Possible answers were 6, 10, and 20.');
+            isCorrect = true;
+            break;
+        } 
     }
+    if (guesses2 === 1) {
+        alert('Sorry, you\'re out of guesses. Possible answers were 6, 10, and 20.');
+        break;
+    } 
+    guesses2--;
 }
 
+// while(guesses > 0) {
+//     let guess = parseInt(prompt('What number am I thinking of?'));
 
-
+//     if(guess !== 3 && guesses === 1) {
+//         alert('Sorry, you\'re out of guesses. The number was 3.');
+//         guesses--;
+//     } else if (guess === 3) {
+//         alert('Congratulations you guessed right. The number was 3.');
+//         break;
+//     } else if (guess > 3) {
+//         alert('Your guess was too high.');
+//         guesses--;
+//     } else if (guess < 3) {
+//         alert('Your guess was too low.');
+//         guesses--;
+//     }
+// }
 
 // function isYesorNo(response) {
 //     response = response.toLowerCase();
