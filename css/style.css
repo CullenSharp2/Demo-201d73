@@ -39,20 +39,53 @@ figcaption {
 
 section {
     border-top: solid black 2pt;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
     margin-top: 2%;
     padding-top: 2%;
 }
 
 h3 {
     font-size: 18pt;
-    margin-bottom: .8%;
+    margin-bottom: 0%;
+    margin-top: .8%;
+    font-weight: bold;
 }
 
 #bio {
     font-size: 12pt;
     float: left;
     overflow-wrap: break-word;
+    margin-bottom: 2%;
+}
+
+em {
+    font-style: italic;
+}
+
+ul li{
+    padding: 0% 0% 2% 0%;
+}
+
+ul h3 {
+    margin: 0%;
+    border-top: solid black 2pt;
+    padding-top: .4%;
+}
+strong {
+    font-weight: bold;
+}
+
+ol {
+    margin: 3%;
+}
+
+ol li{
+    list-style: decimal;
+    padding: 1% 0% 1% 1%;
+}
+
+a{
+    color: black;
 }
 
 footer {
@@ -65,3 +98,4 @@ footer li {
     list-style: none;
     display: inline;
 }
+
