@@ -34,60 +34,30 @@ function guessingGame1(guesses,answers,isCorrect){
 }
 
  guessingGame1(6,[6,10,20],false);
-        while(guesses2 > 0 && isCorrect === false) {
-    let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
 
-    for(let i = 0; i < answers.length; i++) {
-        if(guess === answers[i]) {
-            alert('You got it. Possible answers were 6, 10, and 20.');
-            isCorrect = true;
+  function guessingGame2(guesses){
+        while(guesses > 0) {
+        let guess = parseInt(prompt('What number between 0 and 10 am I thinking of?'));
+
+        if(guess !== 3 && guesses === 1) {
+            alert('Sorry, you\'re out of guesses. The number was 3.');
+            guesses--;
+        } else if (guess === 3) {
+            alert('Congratulations you guessed right. The number was 3.');
             score++;
             break;
-        } 
-    }
-    if (guesses2 === 1) {
-        alert('Sorry, you\'re out of guesses. Possible answers were 6, 10, and 20.');
-        break;
-    } 
-    guesses2--;(guesses2 > 0 && isCorrect === false) {
-    let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
+        } else if (guess > 3) {
+            alert('Your guess was too high.');
+            guesses--;
+        } else if (guess < 3) {
+            alert('Your guess was too low.');
+            guesses--;
+        }   
+    }  
+  }
 
-    for(let i = 0; i < answers.length; i++) {
-        if(guess === answers[i]) {
-            alert('You got it. Possible answers were 6, 10, and 20.');
-            isCorrect = true;
-            score++;
-            break;
-        } 
-    }
-    if (guesses2 === 1) {
-        alert('Sorry, you\'re out of guesses. Possible answers were 6, 10, and 20.');
-        break;
-    } 
-    guesses2--;
+  guessingGame2(4);
 
-
-}
-
-while(guesses2 > 0 && isCorrect === false) {
-    let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
-
-    for(let i = 0; i < answers.length; i++) {
-        if(guess === answers[i]) {
-            alert('You got it. Possible answers were 6, 10, and 20.');
-            isCorrect = true;
-            score++;
-            break;
-        } 
-    }
-    if (guesses2 === 1) {
-        alert('Sorry, you\'re out of guesses. Possible answers were 6, 10, and 20.');
-        break;
-    } 
-    guesses2--;
-}
-
-console.log(score);
 
 while(guesses > 0) {
     let guess = parseInt(prompt('What number between 0 and 10 am I thinking of?'));
