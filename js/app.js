@@ -53,7 +53,6 @@ function guessingGame1(guesses,answers,isCorrect){
   guessingGame2(4);
 
 
-
 function isYesorNo(response) {
     response = response.toLowerCase();
 
