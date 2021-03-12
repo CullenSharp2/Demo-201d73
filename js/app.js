@@ -1,11 +1,5 @@
 'use strict'
 
-let guesses = 4;
-let guesses2 = 6;
-let answers = [6,10,20];
-let isCorrect = false;
-let score = 0;
-
 function getUsername(){
     let username = prompt('What\'s your name?');
     alert('Welcome to my site, '+ username);
@@ -59,26 +53,6 @@ function guessingGame1(guesses,answers,isCorrect){
   guessingGame2(4);
 
 
-while(guesses > 0) {
-    let guess = parseInt(prompt('What number between 0 and 10 am I thinking of?'));
-
-    if(guess !== 3 && guesses === 1) {
-        alert('Sorry, you\'re out of guesses. The number was 3.');
-        guesses--;
-    } else if (guess === 3) {
-        alert('Congratulations you guessed right. The number was 3.');
-        score++;
-        break;
-    } else if (guess > 3) {
-        alert('Your guess was too high.');
-        guesses--;
-    } else if (guess < 3) {
-        alert('Your guess was too low.');
-        guesses--;
-    }
-}
-
-console.log(score);
 
 function isYesorNo(response) {
     response = response.toLowerCase();
