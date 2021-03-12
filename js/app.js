@@ -13,6 +13,62 @@ function getUsername(){
 
 getUsername();
 
+function guessingGame1(guesses,answers,isCorrect){
+   while(guesses2 > 0 && isCorrect === false) {
+        let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
+    
+        for(let i = 0; i < answers.length; i++) {
+            if(guess === answers[i]) {
+                alert('You got it. Possible answers were 6, 10, and 20.');
+                isCorrect = true;
+                score++;
+                break;
+            } 
+        }
+        if (guesses === 1) {
+            alert('Sorry, you\'re out of guesses. Possible answers were 6, 10, and 20.');
+            break;
+        } 
+        guesses--;
+   }
+}
+
+ guessingGame1(6,[6,10,20],false);
+        while(guesses2 > 0 && isCorrect === false) {
+    let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
+
+    for(let i = 0; i < answers.length; i++) {
+        if(guess === answers[i]) {
+            alert('You got it. Possible answers were 6, 10, and 20.');
+            isCorrect = true;
+            score++;
+            break;
+        } 
+    }
+    if (guesses2 === 1) {
+        alert('Sorry, you\'re out of guesses. Possible answers were 6, 10, and 20.');
+        break;
+    } 
+    guesses2--;(guesses2 > 0 && isCorrect === false) {
+    let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
+
+    for(let i = 0; i < answers.length; i++) {
+        if(guess === answers[i]) {
+            alert('You got it. Possible answers were 6, 10, and 20.');
+            isCorrect = true;
+            score++;
+            break;
+        } 
+    }
+    if (guesses2 === 1) {
+        alert('Sorry, you\'re out of guesses. Possible answers were 6, 10, and 20.');
+        break;
+    } 
+    guesses2--;
+
+
+}
+
 while(guesses2 > 0 && isCorrect === false) {
     let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
 
