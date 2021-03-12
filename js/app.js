@@ -6,8 +6,12 @@ let answers = [6,10,20];
 let isCorrect = false;
 let score = 0;
 
-let username = prompt('What\'s your name?');
-alert('Welcome to my site, '+ username);
+function getUsername(){
+    let username = prompt('What\'s your name?');
+    alert('Welcome to my site, '+ username);
+}
+
+getUsername();
 
 while(guesses2 > 0 && isCorrect === false) {
     let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
