@@ -1,10 +1,15 @@
+html {
+    background-color: cornsilk;
+    color: darkslateblue;
+}
+
 #page {
     margin: 2%;
     padding: 1%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: solid black 2pt;
+    border: solid rgb(218, 218, 223) 8pt;
     display: inline-block;
-    background-color: salmon;
+    background-color: rgb(118, 211, 130);
 }
 
 header {
@@ -13,6 +18,7 @@ header {
 }
 main {
     display: inline;
+    width: 800px;
 }
 
 #about {
@@ -38,10 +44,11 @@ figcaption {
 }
 
 section {
-    border-top: solid black 2pt;
+    border-top: solid rgb(218, 218, 223) 8pt;
     margin-bottom: 3%;
     margin-top: 2%;
-    padding-top: 2%;
+    padding: 20px;
+    width: 500px;
 }
 
 h3 {
@@ -63,12 +70,11 @@ em {
 }
 
 ul li{
-    padding: 0% 0% 2% 0%;
+    padding: 0% 0% 5% 0%;
 }
 
 ul h3 {
     margin: 0%;
-    border-top: solid black 2pt;
     padding-top: .4%;
 }
 strong {
@@ -85,12 +91,12 @@ ol li{
 }
 
 a{
-    color: black;
+    color: darkslateblue;
 }
 
 footer {
     margin-top: 2%;
-    border-top: solid black 2pt;
+    border-top: solid rgb(218, 218, 223) 8pt;
     padding-top: 2%;
 }
 
@@ -99,3 +105,6 @@ footer li {
     display: inline;
 }
 
+br {
+    display: block;
+}
