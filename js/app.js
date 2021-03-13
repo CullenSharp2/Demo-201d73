@@ -1,5 +1,7 @@
 'use strict'
 
+let score = 0;
+
 function getUsername(){
     let username = prompt('What\'s your name?');
     alert('Welcome to my site, '+ username);
@@ -8,7 +10,7 @@ function getUsername(){
 getUsername();
 
 function guessingGame1(guesses,answers,isCorrect){
-   while(guesses2 > 0 && isCorrect === false) {
+   while(guesses > 0 && isCorrect === false) {
         let guess = parseInt(prompt('What number am I thinking of between 0 and 20?'));
     
         for(let i = 0; i < answers.length; i++) {

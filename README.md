@@ -8,6 +8,8 @@ This is a webpage I made for Lab 2 of code 201. It prompts you for some input, a
 
 I added a 'top ten' songs section to the end of my page, and a number of guessing games (seven of them). The page tracks your score displaying it at the end. 
 
+Roman and Skyler assisted during pair programming. 
+
 ### Author: Cullen Sharp
 
 ### Links and Resources
